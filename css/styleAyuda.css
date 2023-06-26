@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+p{
+    font-size: 17px;
+}
+
+a:hover{
+    color:#53e4e4 !important;
+}
+
+:root{
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+    scroll-behavior: smooth; /*Controlar el comportamiento del scroll, para que el bajar sea
+    suave y sutil*/
+}
+
+.nav-link{
+    transition: all 0.2s;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid rgb(71, 181, 255);
+}
+
+body{
+font-family: 'League Spartan', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: var(--dark);
+}
+
+.bg{
+    background-color: #1a8897;
+}
+
+.bg-dark-x {
+    background-color: #e6eff1
+}
+
+.btn-personal{
+    min-height: 3.135rem;
+    min-width: 2.135rem;
+    line-height: initial;
+    background-color: #54a4a4;
+    color: var(--light);
+    font-size: 20px;
+}
+
+.boton{
+    justify-content: center;
+    text-align: center; 
+}
+
+.btn-personal:hover{
+    min-height: 3.135rem;
+    line-height: initial;
+    background-color: #2e7272;
+    color: var(--light);
+}
+
+.text-personal{
+    color: #20a9bb;
+    font-size: 30px;
+}
+
+.text-personal-2{
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+}
+
+footer {
+	background: #101010;
+    
+}
+
+/*Estilos para el container*/
+.contenedor{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 40vh; /*viewport height (altura del dispositivo)*/
+    background-image: linear-gradient(to right, rgba(79, 172, 254, 0.502) 0%, rgba(0, 241, 254, 0.502) 100%),
+    url(../img/5065299.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.banner{
+    height: 30vh; /*viewport height (altura del dispositivo)*/
+    background-image: linear-gradient(to right, rgba(79, 172, 254, 0.502) 0%, rgba(0, 241, 254, 0.502) 100%),
+    url(../img/5065299.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0; /*Para sobreescribir el padding de .contenedor*/
+    height: 100%;
+    display: flex; /*Lo hago flexible para que se posicione:*/
+    justify-content: center; /*vertical*/
+    align-items: center; /*horizontal*/
+    flex-direction: column; /*para que un texto vaya sobre el otro*/
+    color: #F2F2F2;
+}
+
+/*Inicio Galería*/
+.titulo-captura{
+    font-size: 40px;/*fz*/
+    margin-bottom: 15px;/*mb*/
+    color: #252940;
+}
+
+.estructura{
+    height: 200px;
+}
+
+.input-box {
+  position: relative;
+  height: 76px;
+  max-width: 900px;
+  min-width: 10px;
+  width: 100%;
+  background: #fff;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: rgb(85, 187, 255);
+  cursor: pointer;
+}
+
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.button:hover{
+    min-height: 3.135rem;
+    line-height: initial;
+    background-color: rgb(73, 145, 193);
+    color: #f8fae6;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
+  }
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+  .input-box .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}

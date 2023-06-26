@@ -1,0 +1,168 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  font-size: 17px;
+}
+
+p{
+  font-size: 17px;
+}
+
+a:hover{
+  color:#53e4e4 !important;
+}
+
+:root{
+  --dark: #16191c;
+  --dark-x: #1e2126;
+  --light: #ffffff;
+  scroll-behavior: smooth; /*Controlar el comportamiento del scroll, para que el bajar sea
+  suave y sutil*/
+}
+
+.nav-link{
+  transition: all 0.2s;
+}
+
+.nav-link:hover{
+  border-bottom: 2px solid rgb(71, 181, 255);
+}
+
+body{
+font-family: 'League Spartan', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: var(--dark);
+}
+
+.bg{
+  background-color: #1a8897;
+}
+
+.bg-dark-x {
+  background-color: #e6eff1
+}
+
+.btn-personal{
+  min-height: 3.135rem;
+  line-height: initial;
+  background-color: #54a4a4;
+  color: var(--light);
+}
+
+.btn-personal:hover{
+  min-height: 3.135rem;
+  line-height: initial;
+  background-color: #2e7272;
+  color: var(--light);
+}
+
+.text-personal{
+  color: #20a9bb;
+  font-size: 30px;
+}
+
+.text-personal-2{
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.text-personal-3{
+  color: rgb(161, 255, 253);
+  font-size: 25px;
+  justify-content: center;
+}
+
+.text-personal-4{
+  color: rgb(165, 170, 177);
+  font-size: 25px;
+  justify-content: center;
+}
+
+footer {
+background: #101010;
+}
+
+.card-image {
+  width: 80%;
+  height: 80%px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.fondo{
+  background-image: linear-gradient(to right, rgba(52, 231, 255, 0.5) 0%, rgba(0, 79, 84, 0.5) 100%),
+  url(../img/3409297.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.wrapper{
+  width: auto;
+  height: auto;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  padding: 70px 25px 70px 25px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto; 
+  overflow: hidden;
+}
+
+.wrapper .left{
+  width: 35%;
+  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}

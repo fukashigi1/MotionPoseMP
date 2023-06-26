@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+p{
+    font-size: 17px;
+}
+
+a:hover{
+    color:#53e4e4 !important;
+}
+
+:root{
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+    scroll-behavior: smooth; /*Controlar el comportamiento del scroll, para que el bajar sea
+    suave y sutil*/
+}
+
+.nav-link{
+    transition: all 0.2s;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid rgb(71, 181, 255);
+}
+
+body{
+font-family: 'League Spartan', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: var(--dark);
+}
+
+.bg{
+    background-color: #1a8897;
+}
+
+.bg-dark-x {
+    background-color: #e6eff1
+}
+
+.btn-personal{
+    min-height: 3.135rem;
+    line-height: initial;
+    background-color: #54a4a4;
+    color: var(--light);
+}
+
+.btn-personal:hover{
+    min-height: 3.135rem;
+    line-height: initial;
+    background-color: #2e7272;
+    color: var(--light);
+}
+
+.text-personal{
+    color: #20a9bb;
+    font-size: 30px;
+}
+
+.text-personal-2{
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+}
+
+footer {
+	background: #101010;
+    
+}
+
+/*Estilos para el container*/
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+    
+}
+
+header{
+    height: 40vh; /*viewport height (altura del dispositivo)*/
+    background-image: linear-gradient(to right, rgba(79, 172, 254, 0.502) 0%, rgba(0, 241, 254, 0.502) 100%),
+    url(../img/5065299.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-bottom: 3%;
+}
+
+.banner{
+    height: 30vh; /*viewport height (altura del dispositivo)*/
+    background-image: linear-gradient(to right, rgba(79, 172, 254, 0.502) 0%, rgba(0, 241, 254, 0.502) 100%),
+    url(../img/5065299.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 3%;
+}
+
+.head{
+    text-align: center;
+    padding: 0; /*Para sobreescribir el padding de .contenedor*/
+    height: 100%;
+    display: flex; /*Lo hago flexible para que se posicione:*/
+    justify-content: center; /*vertical*/
+    align-items: center; /*horizontal*/
+    flex-direction: column; /*para que un texto vaya sobre el otro*/
+    color: #F2F2F2;
+}
+
+/* Estilo para la cuadrícula de tarjetas */
+.card-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 80px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 50%;
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-img-top{
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    margin-top: 1px;
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    margin-bottom: 1px;
+    color: #00b9ec;
+    text-decoration: none;
+    font-size: 35px;
+    font-family:Impact;
+    text-align: center;
+}
+
+/* Transición al pasar el cursor sobre las tarjetas */
+.card:hover {
+    transform: scale(1.05);
+}
+/*Fin Galería*/
+
+.titulo-catalogo{
+    font-weight: bold;
+    font-size: 35px;
+    font-family:Tahoma, sans-serif;
+}
+
+.text-descripcion{
+    font-size: 20px;
+    color: #777e8f;
+}
+
+.price{
+    text-align: center;
+}
+
+.price__table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price__element{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #696871;
+    --color-price: #1d223f;
+    --bg-cta: #fff;
+    --color-cta: #107678;
+    --color-items: #696871;
+}
+
+.price__element--best{
+    width: 370px;
+    padding: 60px 40px;
+    background-color: #40a3ae;
+    --color-plan: rgb(255 255 255 / 75%);
+    --color-price: #fff;
+    --bg-cta: #107678;
+    --color-cta: #FFF;
+    --color-items: #fff;
+}
+
+.price__name{
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.price__price{
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+.price__features{
+    font-size: 1.5rem;
+    color: var(--color-price);
+}
+
+.price__features__2{
+    font-size: 1.3rem;
+    color: var(--color-price);
+}
+
+.price__items{
+    text-align: center;
+}
+
+.price__cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
